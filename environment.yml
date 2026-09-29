@@ -1,0 +1,15 @@
+name: colabfold
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - colabfold[alphafold]==1.6.3
+      # JAX GPU 支持需单独安装（pip 版 colabfold 默认只带 CPU 后端）：
+      # 装完本环境后执行： pip install 'jax[cuda12]'
+      # 关键包版本参考（本项目实测）：
+      #   alphafold-colabfold 2.3.20
+      #   jax / jaxlib        0.10.2
+      #   numpy               2.4.6

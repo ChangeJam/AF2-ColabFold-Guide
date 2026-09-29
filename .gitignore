@@ -1,0 +1,25 @@
+# === AF2/ColabFold 大体积中间文件（本地生成，勿入库）===
+*.a3m
+*_env/
+out.tar.gz
+*.m8
+params/
+*.npz
+alphafold_params*.tar
+download_finished.txt
+# 预测输出目录（保留 examples 下精选结果）
+out/
+out_*/
+!examples/test_monomer/results/
+*_relaxed_*.pdb
+# === Python ===
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+# === 系统/编辑器 ===
+.DS_Store
+*.swp
+.idea/
+.vscode/
